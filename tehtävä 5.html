@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="target"/>
+    <script>
+        const vuosi = parseInt(prompt("Anna vuosi "))
+        if((0 == vuosi % 4) && (0 != vuosi % 100)|| (0 == vuosi % 400)){
+          document.querySelector('#target').innerHTML = vuosi + " on karkaus vuosi"
+        } else {
+          document.querySelector('#target').innerHTML = vuosi + " ei ole karkaus vuosi"
+        }
+
+    </script>
+
+</body>
+</html>

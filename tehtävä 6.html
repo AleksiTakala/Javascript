@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="T"/>
+    <script>
+        const vastaus = confirm("Should i calculate the square root?")
+        if(vastaus == true){
+          const num = parseInt(prompt('Give a number: '))
+          if(num >= 0){
+            const nelio = Math.sqrt(num)
+            document.querySelector('#T').innerHTML = "Square root of " + num + " is " +nelio
+          } else {
+            document.querySelector('#T').innerHTML = "The square root of a negative number is not defined"
+          }
+        }
+        if(vastaus == false){
+            document.querySelector('#T').innerHTML = "The square root is not calculated."
+        }
+
+
+    </script>
+</body>
+</html>

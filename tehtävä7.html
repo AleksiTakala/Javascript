@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="target"/>
+    <script>
+        const maara = parseInt(prompt("Anna noppien lukumaara "))
+        let nopat = [];
+
+        for(let i = 1; i<=maara; i++) {
+            const noppa = Math.floor(Math.random()*6)+1;
+            nopat.push(noppa)
+        }
+        let result = nopat.reduce((a, b) => {
+            return a + b;
+        });
+        document.querySelector('#target').innerHTML = result;
+
+
+
+
+    </script>
+
+</body>
+</html>

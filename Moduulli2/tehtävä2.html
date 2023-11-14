@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id = "id"/>
+<script>
+  nimetlist = []
+  const pituus = parseInt(prompt("How many participants"))
+
+    for(let i = 1; i <= pituus; i++){
+      const nimet = prompt("Give participants names")
+      nimetlist.push(nimet)
+    }
+    nimetlist.sort()
+  document.querySelector("#id").innerHTML = nimetlist
+
+
+
+</script>
+<p></p>
+</body>
+</html>

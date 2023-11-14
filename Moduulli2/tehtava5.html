@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="id"></p>
+<script>
+  numbers = [];
+  while (true) {
+    const number = parseInt(prompt('Give numbers'));
+    if (numbers.includes(number)) {
+      console.log('Number has already been given. Ending program');
+      numbers.sort((a, b) => a - b);
+      numbers.reverse();
+      for (let i = 1; i < numbers.length; i++) {
+        console.log(numbers[i]);
+      }
+      break;
+    }
+    numbers.push(number);
+
+  }
+
+</script>
+
+</body>
+</html>
